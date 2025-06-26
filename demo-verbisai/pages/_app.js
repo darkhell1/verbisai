@@ -8,20 +8,30 @@ const darkTheme = createTheme({
     background: {
       default: "#18191A",
       paper: "#242526",
+      sidebar: "#202123"
     },
     primary: {
-      main: "#1DE9B6",
+      main: "#00bfa5",
     },
     secondary: {
-      main: "#FF5722",
+      main: "#FF9800",
     },
   },
   shape: {
-    borderRadius: 12,
+    borderRadius: 16,
   },
   typography: {
-    fontFamily: "Roboto, Arial, sans-serif",
+    fontFamily: "Inter, Roboto, Arial, sans-serif",
   },
+  components: {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundImage: "none"
+        }
+      }
+    }
+  }
 });
 
 export default function App({ Component, pageProps }) {
